@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+
+{% block body %}
+  <form action="" class="w-25 m-auto mt-5 p-3 mb-5 bg-body-secondary" style="border: 5px solid gray; border-radius: 10px;" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <div class="text-center"><button type="submit" class="btn btn-outline-secondary mt-3">Kayıt Ol!</button></div>
+    
+  </form>
+{% endblock body %}
